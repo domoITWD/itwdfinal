@@ -1,5 +1,20 @@
-/* media querey for desktop*/
-@media screen and (min-width: 992px) {
+/* smooth scrolling + custom cursor*/
+* {
+  scroll-behavior: smooth;
+}
+
+footer {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: lighter;
+  color: #262626;
+  font-size: 3vmin;
+  padding-top: 19vmin;
+  text-align: left;
+}
+
+/* media querey for iphone 6/7/8 */
+@media screen and (min-width: 375px) {
   body {
     margin: 0;
     padding: 0;
@@ -9,11 +24,10 @@
 
   .hero {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
     width: 100vw;
     height: 100vh;
     background-color: #F2F2F2;
-    padding-right: 2vmin;
   }
 
   /* hero hello // landing page */
@@ -21,31 +35,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 35vmin;
+    padding-top: 8vmin;
     margin: 0;
-    font-size: 25vmin;
+    font-size: 35vmin;
     font-family: 'Cormorant Garamond', serif;
     font-weight: lighter;
     color: #262626;
     background-color: #F2F2F2;
-    border-color: #262626;
     width: 100vw;
     height: 100vh;
-    padding-bottom: 100vmin;
+    padding-bottom: 50vmin;
   }
 
   /* custom scrollbar */
   body::-webkit-scrollbar {
-    width: 1vmin;
-  }
-
-  body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
-    background: #F2F2F2;
+    width: 0.5vmin;
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #737373;
+    background-color: #F2F2F2;
+  }
+
+  /* scrollbar for poetry @ smaller scales */
+  .box::-webkit-scrollbar {
+    width: 0.5vmin;
+  }
+
+  .box::-webkit-scrollbar-thumb {
+    background-color: #BFBFBF;
   }
 
   /* javascript */
@@ -61,56 +78,53 @@
     color: #262626;
     font-family: 'Cormorant Garamond', serif;
     font-weight: lighter;
-    letter-spacing: 0.3vmin;
+    letter-spacing: 0.2vmin;
+    padding-bottom: 100vmin;
   }
 
   .look {
-    margin: 0;
     text-align: center;
     font-size: 10vmin;
-    color: #0D0D0D;
+    color: #262626;
     font-family: 'Cormorant Garamond', serif;
     font-weight: lighter;
-    letter-spacing: 0.5vmin;
+    letter-spacing: 0.2vmin;
   }
 
-  /* .fas {
-  position: relative;
-  text-align: center;
-  font-size: 10vmin;
-  color:  #262626;
-} */
   p {
     padding: 0;
     margin: 0;
   }
 
-  .backgroundsec2 {
+  .Content {
     height: 100vh;
     width: 100vw;
-    opacity: 30%;
-  }
-
-  .Content {
     font-family: 'Cormorant Garamond', serif;
-    text-align: justify;
-    padding: 0;
+    text-align: right;
+    padding-top: 5vmin;
   }
 
   .box {
-    padding-top: 35vmin;
+    margin-left: 12vmin;
     background-color: #F2F2F2;
-    width: 29vw;
-    height: 67vh;
+    width: 65vw;
+    height: 70vh;
     box-shadow: 3px 3px;
     padding: 5vmin;
-    letter-spacing: 0.2vmin;
     text-align: left;
+    overflow-y: auto;
+    font-size: 7vmin;
   }
 
+  .poemContainer {
+    padding-top: 150vmin;
+  }
+
+  /* poetry  */
   .poem1 {
     background-image: url('https://wallpaper.wiki/wp-content/uploads/2017/05/Abstract-Planet-Dark-Nature-Teal-Wallpapers.jpg');
     filter: grayscale(100%);
+    background-size: cover;
   }
 
   .poem2 {
@@ -120,17 +134,17 @@
   }
 
   .poem3 {
-    background-image: url('http://www.artnet.com/WebServices/images/ll00719lld7JuEFgVeECfDrCWvaHBOcc0-11-022cc/keith-haring-untitled-(see-no-evil,-hear-no-evil,-speak-no-evil).jpg');
+    background-image: url('https://images3.alphacoders.com/961/96119.jpg');
     filter: grayscale(100%);
     background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .poem4 {
     background-image: url('https://66.media.tumblr.com/16a701bebff70cc9acfdb07a6560ff05/tumblr_pswbvpcCtL1qe2uw2o1_1280.jpg');
     filter: grayscale(100%);
     background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .poem5 {
@@ -138,18 +152,19 @@
     background-repeat: no-repeat;
     filter: grayscale(100%);
     background-position: center;
+    background-size: cover;
   }
 
   .poem6 {
-    background-image: url("https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/artwork/407611_1_m.jpg");
+    background-image: url("https://wallpaperaccess.com/full/653942.jpg");
     background-repeat: no-repeat;
     filter: grayscale(100%);
     background-position: center;
   }
 
   .poem7 {
-    background-image: url("http://www.californiaherps.com/films/filmimages/evesbayou12.jpg");
-    background-repeat: no-repeat;
+    background-image: url("https://cdn.thecrazytourist.com/wp-content/uploads/2019/02/ccimage-shutterstock_302009690.jpg");
+    background-size: cover;
     filter: grayscale(100%);
     background-position: center;
   }
@@ -163,6 +178,8 @@
   .poem9 {
     background-image: url("https://i.pinimg.com/originals/4c/f8/8c/4cf88c5e761eca3d6d386231a244d2a6.jpg");
     filter: grayscale(100%);
+    background-size: cover;
+    background-repeat:
   }
 
   .poem10 {
@@ -187,6 +204,245 @@
     background-image: url("https://i.pinimg.com/originals/9b/d8/15/9bd8156d53e5951b48e2acff2b884d60.jpg");
     filter: grayscale(100%);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .poem14 {
+    background-image: url("https://walker-web.imgix.net/cms/psabillboardV3.jpg?fm=jpg&auto=format,compress&width=512&height=512&fit=max");
+    filter: grayscale(100%);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .poem15 {
+    background-image: url("https://www.theseunbadejo.com/wp-content/uploads/2017/09/21879479_436950110034539_8743944023221207040_n-808x450.jpg");
+    filter: grayscale(100%);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* media querey for desktop*/
+@media screen and (min-width: 812px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F2F2F2;
+    padding-right: 2vmin;
+  }
+
+  /* hero hello // landing page */
+  .hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vmin;
+    margin: 0;
+    font-size: 25vmin;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    color: #262626;
+    background-color: #F2F2F2;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 100vmin;
+  }
+
+  /* custom scrollbar */
+  body::-webkit-scrollbar {
+    width: 0.5vmin;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #F2F2F2;
+  }
+
+  /* javascript */
+  .hello .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  /* lading page intro */
+  .content {
+    text-align: center;
+    font-size: 10vmin;
+    color: #262626;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    letter-spacing: 0.3vmin;
+  }
+
+  .look {
+    /* margin: 0; */
+    text-align: center;
+    font-size: 10vmin;
+    color: #0D0D0D;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    letter-spacing: 0.5vmin;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .Content {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: justify;
+    padding-top: 2vmin;
+    padding: 5vmin;
+  }
+
+  .box {
+    font-size: 4vmin;
+    background-color: #F2F2F2;
+    width: 29vw;
+    height: 67vh;
+    border-style: solid;
+    border-width: medium;
+    border-color: #000;
+    letter-spacing: 0.2vmin;
+    text-align: left;
+    line-height: 7.0vmin;
+  }
+
+  /* collage effect */
+  .left {
+    margin-left: 100vmin;
+    margin-top: 7vmin;
+  }
+
+  .lowerLeft {
+    margin-top: 25vmin;
+  }
+
+  .right {
+    margin-left: 107vmin;
+    margin-bottom: 3vmin;
+  }
+
+  .upperRight {
+    margin-right: 55vmin;
+    margin-bottom: 15vmin;
+  }
+
+  .upperLeft {
+    margin-right: 55vmin;
+    margin-bottom: 15vmin;
+  }
+
+  .lowerRight {
+    margin-left: 70vmin;
+    margin-top: 15vmin;
+  }
+
+  .center {
+    margin-left: 50vmin;
+  }
+
+  /* spacing */
+  .poemContainer {
+    padding-top: 150vmin;
+  }
+
+  /* poetry */
+  .poem1 {
+    background-image: url('https://wallpaper.wiki/wp-content/uploads/2017/05/Abstract-Planet-Dark-Nature-Teal-Wallpapers.jpg');
+    filter: grayscale(100%);
+    background-size: cover;
+  }
+
+  .poem2 {
+    background-image: url('https://cdn130.picsart.com/297564110129201.jpg?r1024x1024');
+    filter: grayscale(100%);
+    background-position: center;
+  }
+
+  .poem3 {
+    background-image: url('http://www.artnet.com/WebServices/images/ll00719lld7JuEFgVeECfDrCWvaHBOcc0-11-022cc/keith-haring-untitled-(see-no-evil,-hear-no-evil,-speak-no-evil).jpg');
+    filter: grayscale(100%);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .poem4 {
+    background-image: url('https://assets.leevalley.com/Size4/10077/XK401-mayan-hammock-f-03.jpg');
+    filter: grayscale(100%);
+    background-size: auto;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .poem5 {
+    background-image: url("https://www.moma.org/d/assets/W1siZiIsIjIwMTUvMTAvMjAvMzF4MWF6bzF5Yl9FeHF1aXNpdGVDb3Jwc2VzLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDIwMDB4MTMzM14gLWdyYXZpdHkgQ2VudGVyIC1jcm9wIDIwMDB4MTMzMyswKzAiXV0/ExquisiteCorpses.jpg?sha=c7fb3dabbe2efc8e");
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    background-position: center;
+  }
+
+  .poem6 {
+    background-image: url("https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/artwork/407611_1_m.jpg");
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    background-position: center;
+  }
+
+  .poem7 {
+    background-image: url("http://www.californiaherps.com/films/filmimages/evesbayou12.jpg");
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .poem8 {
+    background-image: url("https://s3.amazonaws.com/paddle8-production/1098/850/53974/53974-1424359732-53974-1424131961-MARKE0041_p8.jpg");
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+  }
+
+  .poem9 {
+    background-image: url("https://images.fineartamerica.com/images-medium-large-private/out-the-kitchen-window-marlene-chapin.jpg");
+    filter: grayscale(100%);
+    background-position: center;
+  }
+
+  .poem10 {
+    background-image: url("https://cdn.shopify.com/s/files/1/2593/0662/products/TLJ_8367-1_1024x1024@2x.jpg?v=1513178632");
+    filter: grayscale(100%);
+    background-position: left;
+  }
+
+  .poem11 {
+    background-image: url("http://sf.co.ua/12/11/wallpaper-2450469.jpg");
+    filter: grayscale(100%);
+    background-position: center;
+  }
+
+  .poem12 {
+    background-image: url("https://miro.medium.com/max/5040/1*iuTTVEt9lPbE-KkMb-rT2A.jpeg");
+    filter: grayscale(100%);
+    background-position: center;
+  }
+
+  .poem13 {
+    background-image: url("https://i.pinimg.com/originals/9b/d8/15/9bd8156d53e5951b48e2acff2b884d60.jpg");
+    filter: grayscale(100%);
+    background-position: center;
+    background-size: auto;
     background-repeat: no-repeat;
   }
 
@@ -204,227 +460,3 @@
     background-repeat: no-repeat;
   }
 }
-
-/* media querey for iphone 6/7/8 */
-@media screen and (min-width: 480px) {
-
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #F2F2F2;
-    overflow-x: hidden;
-  }
-
-  .hero {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #F2F2F2;
-  }
-
-  /* hero hello // landing page */
-  .hello {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 35vmin;
-    margin: 0;
-    font-size: 35vmin;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: lighter;
-    color: #262626;
-    background-color: #F2F2F2;
-    border-color: #262626;
-    width: 100vw;
-    height: 100vh;
-    padding-bottom: 100vmin;
-  }
-
-  /* custom scrollbar */
-  body::-webkit-scrollbar {
-    width: 1vmin;
-  }
-
-  body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
-    background: #F2F2F2;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    background-color: #737373;
-  }
-
-  /* scrollbar for poetry @ smaller scales */
-  .box::-webkit-scrollbar {
-    width: 1vmin;
-  }
-
-  .box::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
-    background: #F2F2F2;
-  }
-
-  .box::-webkit-scrollbar-thumb {
-    background-color: #737373;
-  }
-
-  /* javascript */
-  .hello .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
-
-  /* lading page intro */
-  .content {
-    text-align: center;
-    font-size: 10vmin;
-    color: #262626;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: lighter;
-    letter-spacing: 0.3vmin;
-    padding-bottom: 100vmin;
-  }
-
-  .look {
-    text-align: center;
-    font-size: 15vmin;
-    color: #262626;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: lighter;
-    letter-spacing: 0.5vmin;
-  }
-
-  /* .fas {
-  position: relative;
-  text-align: center;
-  font-size: 10vmin;
-  color:  #262626;
-} */
-  p {
-    padding: 0;
-    margin: 0;
-  }
-
-  .backgroundsec2 {
-    height: 100vh;
-    width: 100vw;
-    opacity: 30%;
-    background-repeat: no-repeat;
-  }
-
-  .Content {
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Cormorant Garamond', serif;
-    text-align: justify;
-    padding: 0;
-  }
-
-  .box {
-    padding-top: 35vmin;
-    background-color: #F2F2F2;
-    width: 29vw;
-    height: 67vh;
-    box-shadow: 3px 3px;
-    padding: 5vmin;
-    letter-spacing: 0.2vmin;
-    text-align: left;
-    overflow-y: scroll;
-  }
-
-  .poem1 {
-    background-image: url('https://wallpaper.wiki/wp-content/uploads/2017/05/Abstract-Planet-Dark-Nature-Teal-Wallpapers.jpg');
-    filter: grayscale(100%);
-  }
-
-  .poem2 {
-    background-image: url('https://cdn130.picsart.com/297564110129201.jpg?r1024x1024');
-    filter: grayscale(100%);
-    background-position: center;
-  }
-
-  .poem3 {
-    background-image: url('http://www.artnet.com/WebServices/images/ll00719lld7JuEFgVeECfDrCWvaHBOcc0-11-022cc/keith-haring-untitled-(see-no-evil,-hear-no-evil,-speak-no-evil).jpg');
-    filter: grayscale(100%);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .poem4 {
-    background-image: url('https://66.media.tumblr.com/16a701bebff70cc9acfdb07a6560ff05/tumblr_pswbvpcCtL1qe2uw2o1_1280.jpg');
-    filter: grayscale(100%);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .poem5 {
-    background-image: url("https://www.moma.org/d/assets/W1siZiIsIjIwMTUvMTAvMjAvMzF4MWF6bzF5Yl9FeHF1aXNpdGVDb3Jwc2VzLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcmVzaXplIDIwMDB4MTMzM14gLWdyYXZpdHkgQ2VudGVyIC1jcm9wIDIwMDB4MTMzMyswKzAiXV0/ExquisiteCorpses.jpg?sha=c7fb3dabbe2efc8e");
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    background-position: center;
-  }
-
-  .poem6 {
-    background-image: url("https://storage.gra1.cloud.ovh.net/v1/AUTH_10e1a9235c63431c95e5b84a247830db/prod/artwork/407611_1_m.jpg");
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    background-position: center;
-  }
-
-  .poem7 {
-    background-image: url("http://www.californiaherps.com/films/filmimages/evesbayou12.jpg");
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    background-position: center;
-  }
-
-  .poem8 {
-    background-image: url("https://s3.amazonaws.com/paddle8-production/1098/850/53974/53974-1424359732-53974-1424131961-MARKE0041_p8.jpg");
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-  }
-
-  .poem9 {
-    background-image: url("https://i.pinimg.com/originals/4c/f8/8c/4cf88c5e761eca3d6d386231a244d2a6.jpg");
-    filter: grayscale(100%);
-  }
-
-  .poem10 {
-    background-image: url("https://cdn.shopify.com/s/files/1/2593/0662/products/TLJ_8367-1_1024x1024@2x.jpg?v=1513178632");
-    filter: grayscale(100%);
-    background-position: left;
-  }
-
-  .poem11 {
-    background-image: url("http://sf.co.ua/12/11/wallpaper-2450469.jpg");
-    filter: grayscale(100%);
-    background-position: center;
-  }
-
-  .poem12 {
-    background-image: url("https://miro.medium.com/max/5040/1*iuTTVEt9lPbE-KkMb-rT2A.jpeg");
-    filter: grayscale(100%);
-    background-position: center;
-  }
-
-  .poem13 {
-    background-image: url("https://i.pinimg.com/originals/9b/d8/15/9bd8156d53e5951b48e2acff2b884d60.jpg");
-    filter: grayscale(100%);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .poem14 {
-    background-image: url("https://walker-web.imgix.net/cms/psabillboardV3.jpg?fm=jpg&auto=format,compress&width=512&height=512&fit=max");
-    filter: grayscale(100%);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .poem15 {
-    background-image: url("https://www.theseunbadejo.com/wp-content/uploads/2017/09/21879479_436950110034539_8743944023221207040_n-808x450.jpg");
-    filter: grayscale(100%);
-    background-position: right;
-    background-repeat: no-repeat;
-  }
